@@ -6,8 +6,15 @@
   <title>Facebook Login & Graph API</title>
 </head>
 <body>
-  <h1>Test</h1>
-  
   <script src="main.js"></script>
+  <h1>Test</h1>
+  <div class="container">
+  
+    <fb:login-button 
+    scope="public_profile,email"
+    onlogin="checkLoginState();">
+    </fb:login-button>
+
+  </div>
 </body>
 </html>

@@ -31,3 +31,9 @@ function statusChangeCallback(response) {
     console.log('Not authenticated');
   }
 }
+
+function checkLoginState() {
+  FB.getLoginStatus(function (response) {
+    statusChangeCallback(response);
+  });
+}
